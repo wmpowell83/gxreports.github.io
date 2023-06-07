@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>GX Report Center</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #FFFAFA;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: #000000;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #708090;
+  color: #000000;
+  text-align: left;
+  padding: 20px;
+ 
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #708090;
+  color: #000000;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #708090;
+  padding: 10px;
+  text-align: center;
+  color: #000000;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+<div><img src="vacasa.jpg" alt="logo" style="width:350px;height:200px;"></div>  
+  <h1>GX Reporting Center</h1>
+
+</header>
+
+<section>
+  <nav>
+    <ul> 
+    	<h1 style="font-size:200%;">Main Menu</h1> 
+      <div><a href="allemail.html">Email Reports</a></div>
+      <div><a href="phonemenu.html"> Phone Reports</a></div>
+      <div><a href="allqa.html"> QA Reports</a></div>
+      <div><a href="attendance.html"> Attendance Reports</a></div>
+      <div><a href="que.html"> Que Reports</a></div>
+    </ul>
+  </nav>
+    <article><br></br>
+    <p>Combined Reports will show all aqents information combined as one team.</p>
+    <p>Team Reports will separate agents into their prospective teams.</p>
+	<p>Agent Reports will show individual agents.</p>
+	<p>Que Reports will show statistics for the call ques.</p>
+  </article>
+</section>
+
+</body>
+</html>
