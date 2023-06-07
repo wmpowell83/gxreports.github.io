@@ -1,0 +1,42 @@
+<html>
+<head><h1> Agent QA Report by Team Lead</h1>
+<div><a href="allqa.html">Return to QA Reports Menu</a></div><br>
+<h2>1. Search by Month</h2><br>
+<h2> Report sums Emails and Missed Emails for the selected Month, sorted by TL </h2>
+<h5>Month should be entered as "mmm"</h5></head>
+<br></br>
+<body>
+
+<form action="sumqatl.php" method="post">
+Search <input type="text" name="search"><br></br>
+
+Column: <select name="column">
+	<option value="Month">Month</option>
+
+	</select><br></br>
+<input type ="submit">
+</form>
+
+</body>
+</html>
+
+
+<h1>_______________________________________________________________________________________________</h1><br>
+
+<head><h2>2.Search by Team Lead</h2>
+<h2> Report sums Emails and Missed Emails for the selected Team Lead, grouped by Month</h2>
+<h5>Team Lead should be entered as Chestnut, Fidencia or Powell, William J.</h5></head>
+<br></br>
+<body>
+
+<form action="qatlall.php" method="post">
+Search <input type="text" name="search"><br></br>
+
+Column: <select name="column">
+	<option value="TeamLead">Team Lead</option>
+
+	</select><br></br>
+<input type ="submit">
+</form>
+
+</body>

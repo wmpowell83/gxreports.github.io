@@ -1,0 +1,50 @@
+<html>
+<head><h1> Anderson Que Reports</h1>
+<div><a href="que.html">Return to Que Reports Menu</a></div><br>
+
+<h2>1. Search by Month grouped by Agent</h2>
+<h2> Report sums Emails and Missed Emails for the selected Month, sorted by TL, grouped by Agent</h2>
+<h5>Month should be entered as "mmm"</h5></head>
+<br></br>
+
+<body>
+
+<form action="aocanswdet.php" method="post">
+Search <input type="text" name="search"><br></br>
+
+Column: <select name="column">
+	<option value="Month">Month</option>
+
+	</select><br></br>
+<input type ="submit">
+</form>
+
+</body>
+</html>
+
+<h1>___________________________________________________________________________________</h1><br>
+<head><h2> 2. Summary by Month</h2>
+<h2> Report sums Emails and Missed Emails for the selected Agent, grouped by Month</h2>
+<h5>Month should be entered as "mmm"</h5></head>
+<br></br>
+<body>
+
+<form action="aocans.php" method="post">
+Search <input type="text" name="search"><br></br>
+
+Column: <select name="column">
+	<option value="Month">Month</option>
+
+	</select><br></br>
+<input type ="submit">
+</form>
+
+</body>
+
+<h1>___________________________________________________________________________________</h1><br>
+<head><h2> 3. Search by Date</h2>
+<h2> Average Answer Rate by Month </h2>
+<h5>Dates should be entered as yyyy-mm-dd</h5></head>
+<body>
+<a href="aocmos.php"> History by Month</a>
+</body>

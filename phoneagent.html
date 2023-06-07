@@ -1,0 +1,61 @@
+<html>
+<head><h1> Phone Reports by Agent</h1>
+<div><a href="phonemenu.html">Return to Phone Reports Menu</a></div><br>
+
+<h2>1. Search by Month grouped by Agent</h2>
+<h2> Report sums Emails and Missed Emails for the selected Month, sorted by TL, grouped by Agent</h2>
+<h5>Month should be entered as "mmm"</h5></head>
+<br></br>
+
+<body>
+
+<form action="phoneagent.php" method="post">
+Search <input type="text" name="search"><br></br>
+
+Column: <select name="column">
+	<option value="Month">Month</option>
+
+	</select><br></br>
+<input type ="submit">
+</form>
+
+</body>
+</html>
+
+<h1>___________________________________________________________________________________</h1><br>
+<head><h2> 2. Search by Agent grouped by Month</h2>
+<h2> Report sums Emails and Missed Emails for the selected Agent, grouped by Month</h2>
+<h5>Agent should be entered as firstname Lastname</h5></head>
+<br></br>
+<body>
+
+<form action="phoneagentall.php" method="post">
+Search <input type="text" name="search"><br></br>
+
+Column: <select name="column">
+	<option value="Agent">Agent</option>
+
+	</select><br></br>
+<input type ="submit">
+</form>
+
+</body>
+
+<h1>___________________________________________________________________________________</h1><br>
+<head><h2> 3. Search by Date</h2>
+<h2> Report sums Emails and Missed Emails for the selected Date. </h2>
+<h5>Dates should be entered as yyyy-mm-dd</h5></head>
+<br></br>
+<body>
+
+<form action="detailphoneagent.php" method="post">
+Search <input type="text" name="search"><br></br>
+
+Column: <select name="column">
+	<option value="Date">Date</option>
+
+	</select><br></br>
+<input type ="submit">
+</form>
+
+</body>
